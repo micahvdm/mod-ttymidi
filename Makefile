@@ -9,7 +9,7 @@ LDFLAGS += -Wl,--no-undefined
 ifeq ($(DEBUG),1)
 CFLAGS += -O0 -g -DDEBUG
 else
-CFLAGS += -O2 -DNDEBUG
+CFLAGS += -Ofast -DNDEBUG
 endif
 
 all: ttymidi ttymidi.so
